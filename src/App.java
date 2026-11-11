@@ -10,24 +10,24 @@ public class App {
         ProdutoView produtoView = new ProdutoView();
         ProdutoCtrl produtoCtrl = new ProdutoCtrl();
 
-        // Criando um produto
-        // produtoCtrl.adicionarProduto(
-        //     new Produto(
-        //         "Arroz", 
-        //         "Arroz Sepé 5kg", 
-        //         25.99, 
-        //         100
-        //     )
-        // );
+        // Criando e adicionando produtos
+        produtoCtrl.adicionarProduto(
+            new Produto(
+                "Arroz", 
+                "Arroz Sepé 5kg", 
+                25.99, 
+                100
+            )
+        );
 
-        // produtoCtrl.adicionarProduto(
-        //     new Produto(
-        //         "Feijão", 
-        //         "Feijão Sepé 1kg", 
-        //         11.99, 
-        //         50
-        //     )
-        // );
+        produtoCtrl.adicionarProduto(
+            new Produto(
+                "Feijão", 
+                "Feijão Sepé 1kg", 
+                11.99, 
+                50
+            )
+        );
         
         // Mostrar produto na tela
         produtoView.exibirProdutos(
