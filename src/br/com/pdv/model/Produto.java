@@ -29,7 +29,7 @@ public class Produto {
         this.estoque = estoque;
     }
     
-    // Getterns and Setters
+    // Getters and Setters
     public String getNome() {
         return nome;
     }
