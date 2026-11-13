@@ -1,6 +1,7 @@
 package br.com.pdv.view;
 
 import java.util.ArrayList;
+import java.util.Scanner;
 
 import br.com.pdv.model.Produto;
 
@@ -31,5 +32,24 @@ public class ProdutoView {
             System.out.println("------------------");
         }
 
+    }
+
+
+    public Produto cadastrarProduto(Scanner scanner){
+        System.out.println("=== CADASTRAR PRODUTO ===");
+
+        System.out.print("Nome: ");
+        String nome = scanner.nextLine();
+
+        System.out.print("Descrição: ");
+        String descricao = scanner.nextLine();
+
+        System.out.print("Preço: ");
+        double preco = scanner.nextDouble();
+
+        System.out.print("Estoque: ");
+        double estoque = scanner.nextDouble();
+
+        return new Produto(nome, descricao, preco, estoque);
     }
 }
